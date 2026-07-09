@@ -1,230 +1,208 @@
-# VOXA
-🎙️ Voxa AI Platform
+<div align="center">
 
-Enterprise AI Accessibility Platform for Deaf & Hard-of-Hearing users featuring real-time speech transcription, plain-language simplification, intelligent summarization, live microphone recording, and an interactive React dashboard powered by a Multi-Agent AI architecture.
+# 🎙️ Voxa AI Platform
+### Next-Generation Accessible Audio Intelligence & Speech Simplification
 
-Features
-Live Microphone Recording
-Audio File Upload
-Multi-Agent AI Pipeline
- High-Accuracy Speech-to-Text (Whisper)
-Plain Language Simplification
- AI Executive Summarization
- Arabic & English Speech Support
- FastAPI REST API
- React 19 + Vite Frontend
- Animated Audio Wave Interface
- AI Statistics Dashboard
- TXT & JSON Export
- FFmpeg Audio Normalization
- Anti-Hallucination Guardrails
- Real-Time Processing Pipeline Visualization
- AI Pipeline
+[![Digital Egypt Pioneers Initiative](https://img.shields.io/badge/DEPI-Generative%20AI%20Track-2563EB?style=for-the-badge)](https://depi.gov.eg/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![React 19](https://img.shields.io/badge/React%2019-Vite%20%2B%20Tailwind-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![AI Pipeline](https://img.shields.io/badge/AI%20Pipeline-3--Agent%20Architecture-8A2BE2?style=for-the-badge)](#-ai-pipeline-architecture)
 
-The system processes speech through three autonomous AI agents.
+*Empowering Deaf & Hard-of-Hearing Users Through Real-Time Speech Transcription, Cognitive Simplification, and Executive Summarization.*
 
-Agent 1 — Speech Transcription
+[English Documentation](#-overview) • [التوثيق باللغة العربية](#--التوثيق-باللغة-العربية-arabic-overview)
 
-Converts live or uploaded audio into accurate text using OpenAI Whisper.
+---
 
-Features:
+</div>
 
-Speech-to-Text
-Language Detection
-Audio Normalization
-Silence Removal
-Confidence Estimation
-Agent 2 — Plain Language Simplification
+## 🌟 Overview
 
-Transforms complex text into accessible, easy-to-read language.
+**Voxa** is an enterprise-grade AI platform designed to transform spoken audio into accessible, clear, and simplified text. Built for accessibility—specifically aiding deaf and hard-of-hearing individuals—Voxa processes live speech or uploaded audio files through a **Multi-Agent AI Pipeline** that transcribes speech, simplifies complex terminology into plain language, and extracts concise key takeaways.
 
-Features:
+Featuring a sleek, Apple-inspired **React 19 + Tailwind CSS** frontend powered by a high-performance **FastAPI** backend, Voxa offers seamless one-click web interactions, live microphone recording, and modular command-line interfaces.
 
-Accessibility-focused rewriting
-Readability optimization
-Already-simple detection
-Anti-hallucination guardrails
-Semantic similarity validation
-Agent 3 — Executive Summarization
+---
 
-Extracts the most important information from the transcript.
+## ✨ Key Features
 
-Features:
+- **🎙️ Real-Time Voice Recording & Audio Uploads**: Browser-based live microphone speech capture with automated stream teardown, drag-and-drop audio file upload (`.wav`, `.mp3`, `.m4a`), and instant processing.
+- **🤖 3-Agent Autonomous AI Pipeline**:
+  - **Agent 1 (Transcription)**: High-accuracy OpenAI Whisper speech-to-text with automated trailing silence removal and FFmpeg audio normalization.
+  - **Agent 2 (Simplification)**: Multi-layer readability guardrails, intelligent *"already simple"* detection, strict accessibility-focused prompting, and TF-IDF semantic similarity fallback to ensure clear plain language without hallucinations.
+  - **Agent 3 (Summarization)**: Sequence-to-sequence transformer summarization producing structured, bulleted key takeaways.
+- **⚡ Modern Full-Stack Architecture**: React 19 UI served dynamically by FastAPI with unified CORS and static asset hosting.
+- **🌐 Bilingual Support**: Fully optimized for **English** and **Arabic** speech processing, transcription, and user interface readability.
+- **🛠️ One-Click Deployment**: Includes automated Windows batch launchers (`START_VOXA.bat`) for instant local startup.
 
-Key Point Extraction
-Executive Summary
-Compression Ratio
-Structured Output
-System Workflow
+---
 
-The platform follows this processing pipeline:
+## 🏗️ AI Pipeline Architecture
 
-User records speech or uploads an audio file.
-Audio preprocessing & FFmpeg normalization.
-Speech transcription using Whisper.
-Plain-language simplification.
-Executive summarization.
-Interactive dashboard visualization.
-Export results as TXT or JSON.
-Frontend Features
+```
+                   ┌─────────────────────────────────────────┐
+  Audio Input ───▶ │        Agent 1: Transcription           │  OpenAI Whisper (Audio → Text)
+  (Live / File)    └────────────────────┬────────────────────┘
+                                        │ High-Accuracy Transcript
+                                        ▼
+                   ┌─────────────────────────────────────────┐
+                   │         Agent 2: Simplification         │  Multi-Layer Guardrails &
+                   └────────────────────┬────────────────────┘  Readability Pre-Checks
+                                        │ Plain-Language Text
+                                        ▼
+                   ┌─────────────────────────────────────────┐
+                   │         Agent 3: Summarization          │  Transformer Key Takeaways
+                   └────────────────────┬────────────────────┘
+                                        │ Structured Summary
+                                        ▼
+                   ┌─────────────────────────────────────────┐
+                   │       FastAPI + React 19 Dashboard      │  Interactive UI Showcase & Export
+                   └─────────────────────────────────────────┘
+```
 
-The React interface provides:
+---
 
-Live microphone recording
-Drag & Drop audio upload
-Animated sound waves
-AI pipeline visualization
-Live processing indicators
-Interactive result cards
-Copy to Clipboard
-TXT Export
-JSON Export
-Dark/Light Theme
-Responsive Design
-Backend Features
+## 🚀 Tech Stack
 
-FastAPI provides:
+| Component | Technologies & Libraries |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, Tailwind CSS, Framer Motion, Lucide React, Canvas Confetti |
+| **Backend Server** | FastAPI, Uvicorn, Python 3.10+ |
+| **AI & ML Core** | PyTorch, OpenAI Whisper, Hugging Face Transformers, NLTK, Scikit-learn |
+| **Audio Processing** | FFmpeg, SoundFile, NumPy |
 
-Audio processing API
-FFmpeg audio normalization
-Whisper integration
-React static hosting
-REST endpoints
-Unified production deployment
-AI Models
+---
 
-The platform uses multiple AI models working together.
+## 📂 Project Structure
 
-Speech Recognition
+```text
+voxa/
+├── api/
+│   └── server.py                  # FastAPI Backend API & Unified Static Asset Server
+├── frontend/
+│   ├── src/                       # React 19 Components, Pages & Audio Recording Hooks
+│   ├── package.json               # Frontend Dependencies & Scripts
+│   └── tailwind.config.js         # Design System Configuration
+├── agents/
+│   ├── transcription_agent.py     # Agent 1: Speech-to-Text (OpenAI Whisper)
+│   ├── simplification_agent.py    # Agent 2: Cognitive Simplification & Multi-Layer Guardrails
+│   └── summarization_agent.py     # Agent 3: Executive Key Takeaways
+├── core/
+│   └── orchestrator.py            # Synchronous 3-Agent Pipeline Coordinator
+├── models/                        # Pretrained & Fine-tuned Model Weights Directory
+├── data/
+│   ├── input/                     # Audio Upload & Test File Storage
+│   └── output/                    # Automated JSON & Text Processing Results
+├── config.py                      # Global Pipeline Settings & Model Configurations
+├── run_pipeline.py                # Command-Line Interface (CLI) Runner
+├── START_VOXA.bat                 # One-Click Windows Application Launcher
+└── requirements.txt               # Pinned Python Backend Dependencies
+```
 
-OpenAI Whisper (Base)
+---
 
-Used for:
+## ⚡ Quick Start & Installation
 
-Speech Recognition
-Language Detection
-Speech-to-Text
-Language Simplification
+### Prerequisites
+1. **Python 3.10 or 3.11** installed and added to your system `PATH`.
+2. **Node.js (v18+)** installed for frontend building (optional if using the pre-compiled production bundle).
+3. **FFmpeg** installed and accessible in your system `PATH`:
+   - *Windows (Chocolatey)*: `choco install ffmpeg`
+   - *Mac (Homebrew)*: `brew install ffmpeg`
+   - *Linux (Ubuntu/Debian)*: `sudo apt update && sudo apt install ffmpeg`
 
-Google FLAN-T5
+### 1. Clone the Repository & Setup Environment
 
-Used for:
+```bash
+git clone https://github.com/YourUsername/voxa.git
+cd voxa
 
-Plain Language Generation
-Accessibility Rewriting
-Cognitive Simplification
-Executive Summarization
+# Create & activate Python virtual environment
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Mac/Linux:
+source .venv/bin/activate
+```
 
-DistilBART
+### 2. Install Python Dependencies
 
-Used for:
-
-Text Summarization
-Key Takeaway Extraction
-Executive Summary Generation
-Audio Processing
-
-Audio is normalized before inference using FFmpeg.
-
-Normalization includes:
-
-16 kHz Sample Rate
-Mono Channel
-16-bit PCM WAV
-Silence Removal
-Browser Audio Compatibility
-Tech Stack
-Frontend
-React 19
-Vite
-Tailwind CSS
-Framer Motion
-Lucide React
-Backend
-FastAPI
-Uvicorn
-Python
-Artificial Intelligence
-OpenAI Whisper
-Hugging Face Transformers
-FLAN-T5
-DistilBART
-PyTorch
-Scikit-learn
-NLTK
-Audio
-FFmpeg
-NumPy
-SoundFile
-Run
+```bash
 pip install -r requirements.txt
+python -c "import nltk; nltk.download('punkt')"
+```
 
-Run the application:
+### 3. Run the Application
 
-python run_app.py
+#### Option A: One-Click Launcher (Windows)
+Double-click `START_VOXA.bat` or run in terminal:
+```cmd
+START_VOXA.bat
+```
+This automatically starts the FastAPI server and serves the React frontend at **`http://localhost:8000`**.
 
-Or:
+#### Option B: Manual Server Launch
+```bash
+python -m uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload
+```
+Open your browser at **`http://localhost:8000`**.
 
-python -m uvicorn api.server:app --reload
+#### Option C: CLI Pipeline Execution
+Process an audio file directly from your terminal without the UI:
+```bash
+python run_pipeline.py data/input/sample.wav --output results.json
+```
 
-Open:
+---
 
-http://localhost:8000
-API
-Health Check
-GET /api/health
+## 🔌 API Reference
 
-Returns server status.
+The FastAPI backend exposes clean REST endpoints:
 
-Process Audio
-POST /api/process-audio
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/health` | `GET` | Health check ensuring model readiness and server status |
+| `/api/process-audio` | `POST` | Accepts audio file upload (`multipart/form-data`) and returns full 3-agent AI results |
 
-Accepts:
+---
 
-WAV
-MP3
-M4A
-OGG
-WebM
+<div align="right" dir="rtl">
 
-Returns:
+## 🇪🇬 التوثيق باللغة العربية (Arabic Overview)
 
-Transcript
-Simplified Text
-Executive Summary
-Language
-Confidence
-Statistics
-Accessibility
+### نبذة عن مشروع Voxa
+منصة **Voxa** هي نظام ذكاء اصطناعي متطور ومبني باستخدام معمارية **الوكلاء المتعددين (Multi-Agent Architecture)**، يهدف إلى تحويل الصوت المسموع إلى نصوص مكتوبة، ومبسطة، ومختصرة لخدمة الصم وضعاف السمع وتسهيل استيعاب المحاضرات والاجتماعات والمحتوى الصوتي باللغتين العربية والإنجليزية.
 
-Voxa is designed to improve accessibility for Deaf & Hard-of-Hearing users by converting spoken language into clear, readable, and summarized text.
+### الوكلاء الثلاثة (3 AI Agents):
+1. **وكيل التفريغ الصوتي (Transcription Agent)**: يعتمد على نموذج **Whisper** لتحويل الصوت التسجيلي أو المباشر إلى نص بدقة عالية مع التخلص التلقائي من الضوضاء وفترات الصمت.
+2. **وكيل تبسيط المحتوى (Simplification Agent)**: يقوم بتحويل الجمل المعقدة والمصطلحات الصعبة إلى لغة واضحة وسهلة الفهم (Plain Language) مع ضوابط حماية متعددة الطبقات لمنع أي هلوسة في النص.
+3. **وكيل التلخيص (Summarization Agent)**: يستخلص النقاط الأساسية وأهم المخرجات من النص في صورة نقاط واضحة ومباشرة.
 
-Future Improvements
-Speaker Identification
-Real-Time Streaming Transcription
-Emotion Detection
-Speech Translation
-Mobile Application
-Cloud Deployment
-Multi-Speaker Recognition
-Meeting Assistant Mode
-Project Architecture
-Audio Input
-      │
-      ▼
-FFmpeg Audio Normalization
-      │
-      ▼
-Whisper Speech Recognition
-      │
-      ▼
-FLAN-T5 Simplification
-      │
-      ▼
-DistilBART Summarization
-      │
-      ▼
-FastAPI Backend
-      │
-      ▼
-React Dashboard
+### تشغيل المشروع بضغطة زر واحدة (على نظام ويندوز):
+يمكنك تشغيل المنصة بالكامل (الواجهة الأمامية React + الخادم FastAPI + النماذج الذكية) بسهولة عبر الضغط المزدوج على ملف:
+```cmd
+START_VOXA.bat
+```
+ثم فتح المتصفح على الرابط: `http://localhost:8000`
+
+</div>
+
+---
+
+## 🎓 Acknowledgments & Credits
+
+Developed as part of the **Digital Egypt Pioneers Initiative (DEPI)** — Generative AI Track.
+
+| Task / Module | Ownership |
+| :--- | :--- |
+| **AI Transcription & Audio Engineering** | Audio Stream Processing & Whisper Pipeline |
+| **Cognitive Simplification & NLP Guardrails** | Simplification Agent & Semantic Fallbacks |
+| **Executive Summarization Engine** | Transformer Summarization & NLP Chunking |
+| **Full-Stack Integration (React 19 + FastAPI)** | Dashboard UI/UX, Live Audio Recording & API Server |
+
+---
+
+<div align="center">
+Made with ❤️ by the Voxa DEPI Team
+</div>
