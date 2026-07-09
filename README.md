@@ -11,7 +11,6 @@
 
 *Empowering Deaf & Hard-of-Hearing Users Through Real-Time Speech Transcription, Cognitive Simplification, and Executive Summarization.*
 
-[English Documentation](#-overview) • [التوثيق باللغة العربية](#--التوثيق-باللغة-العربية-arabic-overview)
 
 ---
 
